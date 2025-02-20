@@ -76,8 +76,8 @@ const Testimonials = () => {
                     {testimonials.map((testimonial, index) => (
                         <SwiperSlide key={index}>
                             <div
-                                className={`m-4 min-h-80 group border border-gray-200 p-6 bg-white rounded-xl shadow-md flex flex-col justify-between transition-all duration-500 hover:-rotate-2 hover:scale-105 ${
-                                    hoveredIndex !== null && hoveredIndex !== index ? "opacity-30" : "opacity-100"
+                                className={`m-6 md:min-h-[26rem] lg:min-h-80 group border border-gray-200 p-6 bg-white rounded-xl shadow-md flex flex-col justify-between transition-all duration-500 hover:scale-105 hover:-rotate-3 ${
+                                    hoveredIndex !== null && hoveredIndex !== index ? "lg:opacity-50" : "opacity-100"
                                 }`}
                                 onMouseEnter={() => setHoveredIndex(index)}
                                 onMouseLeave={() => setHoveredIndex(null)}
@@ -112,3 +112,5 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
+
